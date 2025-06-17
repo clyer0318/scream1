@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<title>被駭玩笑跳窗</title>
+<script>
+  function showHacked() {
+    alert("你的電腦正在被駭入，宇澤是大帥哥！");
+    let progress = 0;
+    let interval = setInterval(() => {
+      progress += 20;
+      if (progress <= 100) {
+        alert("病毒進度：" + progress + "%");
+      } else {
+        clearInterval(interval);
+        alert("哈哈！你被整了～沒事的 😆");
+      }
+    }, 1000);
+  }
+</script>
+</head>
+<body>
+  <h2>點擊下面連結看看驚喜</h2>
+  <a href="#" onclick="showHacked(); return false;">點我</a>
+</body>
+</html>
+
+
